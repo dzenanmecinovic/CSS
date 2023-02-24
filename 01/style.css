@@ -1,0 +1,32 @@
+/* SELECTORS */
+
+h1 {
+  font-size: 60px;
+}
+
+div,
+p,
+h1 {
+  background-color: #ddd;
+}
+
+div#me p {
+  color: red;
+}
+
+div#me > p {
+  /* sve p childove diva */
+  color: yellow;
+}
+
+div ~ p {
+  /* svaki p posle diva */
+  color: orangered;
+}
+
+div + p {
+  /* samo prvi p posle diva */
+  color: blue;
+}
+
+/* 90% SKIPPED */
