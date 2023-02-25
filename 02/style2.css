@@ -15,10 +15,12 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  transition-property: left;
-  transition-duration: 5s;
+  /* transition-property: left;
+  transition-duration: 1s;
   transition-timing-function: linear;
-  transition-delay: 5s;
+  transition-delay: 0.3s; */
+
+  transition: left 1.5s linear, top 1.5s linear 1.5s;
 }
 
 .ball img {
@@ -28,9 +30,10 @@ body {
 
 .ball-container {
   position: relative;
-  height: 128px;
+  height: 100vh;
 }
 
 .ball-container:hover .ball {
   left: 500px;
+  top: 500px;
 }
